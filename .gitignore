@@ -1,5 +1,6 @@
 .DS_*
 *.log
+
 logs
 **/*.backup.*
 **/*.back.*
@@ -12,3 +13,5 @@ bower_components
 psd
 thumb
 sketch
+
+build
