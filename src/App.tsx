@@ -1,12 +1,26 @@
-import * as React from 'react';
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-export interface HelloWorldProps {
-    userName: string;
-  lang: string;
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
-export const App = (props: HelloWorldProps) => (
-  <h1>
-    Hi { props.userName} from React! Welcome to {props.lang}!
-  </h1>
-);
+export default App;
